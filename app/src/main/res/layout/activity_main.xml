@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- CONTAINER UTAMA UNTUK KONTEN -->
+    <LinearLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoView"
+            android:layout_width="194dp"
+            android:layout_height="163dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Row Icons + Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Kolom Icon -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/iconTambah"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/tambah"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iconAkun"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/orang"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iconList"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/list"
+                    android:layout_marginBottom="20dp"/>
+
+                <ImageView
+                    android:id="@+id/iconLogout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/keluar"/>
+            </LinearLayout>
+
+            <!-- Kolom Button -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0A3D62"
+                    android:text="Tambah Tagihan"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0A3D62"
+                    android:text="Akun Saya"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnList"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0A3D62"
+                    android:text="Daftar Tagihan"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0A3D62"
+                    android:text="Logout"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

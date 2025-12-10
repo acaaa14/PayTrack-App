@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Theme -->
+    <style name="Base.Theme.TAGIHAN123" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Color (judul, tombol fokus, status bar, dsb) -->
+        <item name="colorPrimary">@color/navy</item>
+
+        <!-- Warna gelap (status bar / app bar) -->
+        <item name="colorPrimaryDark">@color/navy_dark</item>
+
+        <!-- Aksen (ikon & highlight) -->
+        <item name="colorSecondary">@color/navy_blue_light</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/navy_dark</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/navy</item>
+    </style>
+
+    <style name="Theme.TAGIHAN123" parent="Base.Theme.TAGIHAN123" />
+
+</resources>
